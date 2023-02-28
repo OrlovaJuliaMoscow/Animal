@@ -10,7 +10,9 @@ namespace Animal
     {
         public abstract string Name { get; set; }
         public Animal(string name)
-        { Name = name; }
+        { 
+            Name = name; 
+        }
 
         public abstract void Say();
 
@@ -23,14 +25,14 @@ namespace Animal
     class Cat : Animal
     {
         //private string say;
-        private string name;
+        string name;
         public override string Name
         {
             get => name;
             set => name = value;
 
         }
-        public Cat (string name)//, string say)
+        public Cat (string name, string say)
             : base(name)
         // { this.say = say; }
         public override void Say()
@@ -43,14 +45,14 @@ namespace Animal
     class Dog : Animal
     {
         //private string say;
-        private string name;
+         string name;
         public override string Name
         {
             get => name;
             set => name = value;
 
         }
-        public Cat(string name)//, string say)
+        public Dog(string name, string say)
             : base(name)
        // { this.say = say; }
         public override void Say()
