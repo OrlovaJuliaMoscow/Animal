@@ -10,10 +10,10 @@ namespace Animal
     {
         static void Main(string[] args)
         {
-            Dog dog=new Dog("Bob");
+            Dog dog = new Dog("Bob");
             Console.WriteLine(dog.Say());
             Console.ReadKey();
         }
-        
+
     }
 }

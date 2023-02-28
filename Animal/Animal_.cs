@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Animal
 {
-    abstract class Animal_
+    abstract class Animal
     {
         public abstract string Name { get; set; }
         public Animal(string name)
-        { 
-            Name = name; 
+        {
+            Name = name;
         }
 
         public abstract void Say();
@@ -22,7 +22,8 @@ namespace Animal
             Say();
         }
     }
-    class Cat : Animal
+
+    internal class Cat : Animal 
     {
         //private string say;
         string name;
@@ -32,8 +33,9 @@ namespace Animal
             set => name = value;
 
         }
-        public Cat (string name, string say)
+        public Cat(string name)//, string say)
             : base(name)
+        { }
         // { this.say = say; }
         public override void Say()
         {
@@ -52,8 +54,9 @@ namespace Animal
             set => name = value;
 
         }
-        public Dog(string name, string say)
+        public Dog(string name)//, string say)
             : base(name)
+        { }
        // { this.say = say; }
         public override void Say()
         {
